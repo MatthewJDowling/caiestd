@@ -25,12 +25,11 @@ int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 //Ginger
 float degToRad(float deg)
 {
-	printf("Enter degrees to convert ");
-	scanf_s("%d", deg);
+	
 	int rad;
 	rad = (deg * 3.1459 / 180);
-	printf("radians: %d", rad);
-    return 0.0f;
+	
+    return rad;
 }
 //Xavier
 float radToDeg(float rad)
@@ -89,9 +88,10 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 {
     return Hotdog();
 }
-//Open
+
 void printHotdog(const Hotdog & targetDog)
 {
+
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
