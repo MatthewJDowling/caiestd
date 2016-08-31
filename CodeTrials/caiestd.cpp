@@ -138,4 +138,7 @@ void printHotdog(const Hotdog & targetDog)
 //Josh
 void cookHotdog(Hotdog & targetDog)
 {
+	targetDog.isPrepared = true;
+	
+
 }
