@@ -10,9 +10,8 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 	Point2D point;
 
 	point.x = lhs.x + rhs.x;
-
-	point.y = lhs.x + rhs.y;
-    return Point2D();
+	point.y = lhs.y + rhs.y;
+    return point;
 }
 //Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
@@ -107,7 +106,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 
 void printHotdog(const Hotdog & targetDog)
 {
-
+	printf(" %d",targetDog);
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
