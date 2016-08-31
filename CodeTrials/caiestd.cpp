@@ -127,6 +127,9 @@ void concatIntArray(int srcA[], size_t srcSizeA, int srcB[], size_t srcSizeB, in
 //Open
 Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int creamCheeseaApps)
 {
+	targetDog.relish = 2;
+	targetDog.mustard = 3;
+	targetDog.creamCheese = 4;
     return Hotdog();
 }
 //Ginger
