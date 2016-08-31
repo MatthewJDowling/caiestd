@@ -25,10 +25,11 @@ int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 //mine
 float degToRad(float deg)
 {
+	printf("Enter degrees to convert ");
 	scanf_s("%d", deg);
 	int rad;
 	rad = (deg * 3.1459 / 180);
-	printf("%d", rad);
+	printf("radians: %d", rad);
     return 0.0f;
 }
 
