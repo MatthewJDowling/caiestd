@@ -47,8 +47,8 @@ int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 //Ginger
 float degToRad(float deg)
 {
-	//scanf_s("%d", deg);
-	int rad;
+	
+	float rad;
 	rad = (deg * 3.1459 / 180);
 	
     return rad;
@@ -56,11 +56,9 @@ float degToRad(float deg)
 //Xavier
 float radToDeg(float rad)
 {
-	float degs = 0, rads = 0, pis = 0;
-	pis = 3.14;
-	degs = 120;
-	rads = (degs * pis) / 180;
-	return rads;
+	float deg;
+	deg = rad * (180 / 3.1459);
+	return deg;
 }
 
 
