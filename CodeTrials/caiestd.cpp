@@ -13,7 +13,7 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 	point.y = lhs.y + rhs.y;
     return point;
 }
-//Pearson
+//Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
 	Point2D Subtraction;
@@ -25,12 +25,24 @@ Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 //Chelsey
 int divideAndConquer(int nums[], size_t numSize)
 {
-    return 0;
+	int pairCount = numSize / 2;
+	int index;
+	for ( int pair = 0; pair < pairCount; ++pair )
+	{
+		index = pair * 2;
+		if (nums[index] > nums[index + 1])
+			printf("%d", nums[index]);
+		else
+			printf("%d", nums[index + 1]);
+	}
+
+    return (index + 1);
 }
-//Open
+//Trevor 
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
-    return 0;
+
+    return (aMax - bMin);
 }
 //Ginger
 float degToRad(float deg)
@@ -59,7 +71,7 @@ int power(int base, int power)
 	ret = pow(base, power);
     return ret;
 }
-//Kobey
+//Pearson
 float distance(Point2D first, Point2D second)
 {
     return 0.0f;
@@ -103,6 +115,7 @@ void fiboMyArray(int dest[], size_t destSize)
 //Open
 void concatIntArray(int srcA[], size_t srcSizeA, int srcB[], size_t srcSizeB, int dest[], size_t destSizeB)
 {
+	
 }
 //Open
 Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int creamCheeseaApps)
@@ -113,7 +126,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 
 void printHotdog(const Hotdog & targetDog)
 {
-
+	printf(" %d",targetDog);
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
