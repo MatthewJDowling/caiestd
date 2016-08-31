@@ -14,7 +14,7 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 	point.y = lhs.x + rhs.y;
     return Point2D();
 }
-//Pearson
+//Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
 	Point2D Subtraction;
@@ -60,7 +60,7 @@ int power(int base, int power)
 	ret = pow(base, power);
     return ret;
 }
-//Kobey
+//Pearson
 float distance(Point2D first, Point2D second)
 {
     return 0.0f;
