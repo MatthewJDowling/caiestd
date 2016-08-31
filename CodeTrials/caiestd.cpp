@@ -57,7 +57,7 @@ int sum(int nums[], size_t numSize)
     return 0;
 }
 
-//Keil
+//Martin
 void fiboMyArray(int dest[], size_t destSize)
 {
 	dest[destSize];
