@@ -27,7 +27,7 @@ int divideAndConquer(int nums[], size_t numSize)
 {
     return 0;
 }
-//Open
+//Trevor
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
     return 0;
