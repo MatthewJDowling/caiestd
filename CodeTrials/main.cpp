@@ -10,5 +10,9 @@
 
 int main()
 {
+	int a, b;
+	printf("Enter base and power");
+	scanf_s(" %d %d", a, b);
+	printf("Answer is: %d" , power(a, b));
     system("pause");
 }
