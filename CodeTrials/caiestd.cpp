@@ -10,9 +10,8 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 	Point2D point;
 
 	point.x = lhs.x + rhs.x;
-
-	point.y = lhs.x + rhs.y;
-    return Point2D();
+	point.y = lhs.y + rhs.y;
+    return point;
 }
 //Pearson
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
