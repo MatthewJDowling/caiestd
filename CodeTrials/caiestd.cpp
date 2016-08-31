@@ -74,7 +74,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 
 void printHotdog(const Hotdog & targetDog)
 {
-
+	printf(" %d",targetDog);
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
