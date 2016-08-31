@@ -2,26 +2,47 @@
 #include "caiestd.h"
 #include <math.h>
 #include <cmath>
-#include <cmath> 
-//Josh
+#include <iostream>
+
+//keil
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
-    return Point2D();
+	Point2D point;
+
+	point.x = lhs.x + rhs.x;
+	point.y = lhs.y + rhs.y;
+    return point;
 }
-//Pearson
+//Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
-    return Point2D();
+	Point2D Subtraction;
+	Subtraction.x = lhs.x - rhs.x;
+	Subtraction.y = lhs.y - rhs.y;
+	
+	return Subtraction;
 }
 //Chelsey
 int divideAndConquer(int nums[], size_t numSize)
 {
-    return 0;
+	int pairCount = numSize / 2;
+	int index;
+	for ( int pair = 0; pair < pairCount; ++pair )
+	{
+		index = pair * 2;
+		if (nums[index] > nums[index + 1])
+			printf("%d", nums[index]);
+		else
+			printf("%d", nums[index + 1]);
 }
-//Open
+
+    return (index + 1);
+}
+//Trevor 
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
-    return 0;
+
+    return (aMax - bMin);
 }
 //Ginger
 float degToRad(float deg)
@@ -29,13 +50,17 @@ float degToRad(float deg)
 	//scanf_s("%d", deg);
 	int rad;
 	rad = (deg * 3.1459 / 180);
-	printf("%d", rad);
-    return 0.0f;
+	
+    return rad;
 }
 //Xavier
 float radToDeg(float rad)
 {
-    return 0.0f;
+	float degs = 0, rads = 0, pis = 0;
+	pis = 3.14;
+	degs = 120;
+	rads = (degs * pis) / 180;
+	return rads;
 }
 
 
@@ -46,9 +71,9 @@ int power(int base, int power)
 	ret = pow(base, power);
     return ret;
 }
-//Kobey
+//Pearson
 float distance(Point2D first, Point2D second)
-{	
+{
 	
 
 	
@@ -67,9 +92,26 @@ int sum(int nums[], size_t numSize)
     return 0;
 }
 
-//Keil
+//Martin
 void fiboMyArray(int dest[], size_t destSize)
 {
+	dest[destSize];
+	for (int i =0; i < destSize; ++i)
+	{
+		if (i == 0)
+		{
+			dest[i] = 0;
+		}
+		else if (i == 1)
+		{
+			dest[i] = 1;
+		}
+		else
+		{
+			dest[i] = dest[i - 1] + dest[i - 2];
+		}
+	}
+	
 }
 
 //Open
@@ -81,9 +123,11 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 {
     return Hotdog();
 }
-//Open
+//Ginger
+
 void printHotdog(const Hotdog & targetDog)
 {
+	printf(" %d",targetDog);
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
