@@ -52,7 +52,7 @@ float radToDeg(float rad);
 
 //Trevor
 // Returns the base raised to the given power.
-int pow(int base, int power);
+int power(int base, int power);
 
 //Kobe
 // Returns the distance between two 2D points.
