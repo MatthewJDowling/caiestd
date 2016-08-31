@@ -2,15 +2,26 @@
 #include "caiestd.h"
 #include <math.h>
 #include <cmath>
-//Josh
+#include <iostream>
+
+
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
+	Point2D point;
+
+	point.x = lhs.x + rhs.x;
+
+	point.y = lhs.x + rhs.y;
     return Point2D();
 }
 //Pearson
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
-    return Point2D();
+	Point2D Subtraction;
+	Subtraction.x = lhs.x - rhs.x;
+	Subtraction.y = lhs.y - rhs.y;
+	
+	return Subtraction;
 }
 //Chelsey
 int divideAndConquer(int nums[], size_t numSize)
@@ -61,7 +72,7 @@ int sum(int nums[], size_t numSize)
     return 0;
 }
 
-//Keil
+//Martin
 void fiboMyArray(int dest[], size_t destSize)
 {
 	dest[destSize];
@@ -92,6 +103,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 {
     return Hotdog();
 }
+//Ginger
 
 void printHotdog(const Hotdog & targetDog)
 {
