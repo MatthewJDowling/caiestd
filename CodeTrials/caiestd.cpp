@@ -7,7 +7,11 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
-    return Point2D();
+	Point2D Subtraction;
+	Subtraction.x = lhs.x - rhs.x;
+	Subtraction.y = lhs.y - rhs.y;
+	
+	return Subtraction;
 }
 
 int divideAndConquer(int nums[], size_t numSize)

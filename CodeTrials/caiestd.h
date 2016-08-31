@@ -7,7 +7,7 @@
 
 struct Point2D
 {
-    float x, y;
+    float x , y;
 };
 
 struct Hotdog
