@@ -13,7 +13,7 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 	point.y = lhs.y + rhs.y;
     return point;
 }
-//Pearson
+//Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
 	Point2D Subtraction;
@@ -27,7 +27,7 @@ int divideAndConquer(int nums[], size_t numSize)
 {
     return 0;
 }
-//Trevor
+//Kobey & Josh
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
     return 0;
@@ -59,7 +59,7 @@ int power(int base, int power)
 	ret = pow(base, power);
     return ret;
 }
-//Kobey
+//Pearson
 float distance(Point2D first, Point2D second)
 {
     return 0.0f;
