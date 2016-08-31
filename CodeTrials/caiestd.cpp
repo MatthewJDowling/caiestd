@@ -20,27 +20,26 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 //Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
-	Point2D Subtraction;
-	Subtraction.x = lhs.x - rhs.x;
-	Subtraction.y = lhs.y - rhs.y;
+	Point2D point;
+	point.x = lhs.x - rhs.x;
+	point.y = lhs.y - rhs.y;
 	
-	return Subtraction;
+	return point;
 }
-//Chelsey
+//Chelsey &Trevor
 int divideAndConquer(int nums[], size_t numSize)
 {
-	int pairCount = numSize / 2;
-	int index;
-	for ( int pair = 0; pair < pairCount; ++pair )
-	{
-		index = pair * 2;
-		if (nums[index] > nums[index + 1])
-			printf("%d", nums[index]);
-		else
-			printf("%d", nums[index + 1]);
-}
 
-    return (index + 1);
+	while (numSize > 1)
+	{
+		for (int i = 0; i < numSize; i += 2)
+		{
+			nums[i / 2] = ((nums[i] > nums[i + 1]) ? nums[i] : nums[i + 1]);
+		}
+		numSize /= 2;
+	}
+
+    return nums[0];
 }
 //Trevor 
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
@@ -51,20 +50,18 @@ int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 //Ginger
 float degToRad(float deg)
 {
-	//scanf_s("%d", deg);
-	int rad;
+	
+	float rad;
 	rad = (deg * 3.1459 / 180);
 	
     return rad;
 }
-//Xavier
+//Ginger :D
 float radToDeg(float rad)
 {
-	float degs = 0, rads = 0, pis = 0;
-	pis = 3.14;
-	degs = 120;
-	rads = (degs * pis) / 180;
-	return rads;
+	float deg;
+	deg = rad * (180 / 3.1459);
+	return deg;
 }
 
 
@@ -143,9 +140,12 @@ void concatIntArray(int srcA[], size_t srcSizeA, int srcB[], size_t srcSizeB, in
 	}
 	dest[destSizeB];
 }
-//Open
+//Ginger & Josh
 Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int creamCheeseaApps)
 {
+	targetDog.relish = 2;
+	targetDog.mustard = 3;
+	targetDog.creamCheese = 4;
     return Hotdog();
 }
 //Ginger
@@ -154,7 +154,10 @@ void printHotdog(const Hotdog & targetDog)
 {
 	printf(" %d",targetDog);
 }
-//Open
+//Josh
 void cookHotdog(Hotdog & targetDog)
 {
+	targetDog.isPrepared = true;
+	
+
 }
