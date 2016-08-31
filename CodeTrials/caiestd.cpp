@@ -89,7 +89,14 @@ float distance(Point2D first, Point2D second)
 //Keil
 int sum(int nums[], size_t numSize)
 {
-    return 0;
+	
+	int total = 0;
+	for (int i = 0; i < numSize; i++)
+	{
+		total = total + nums[i];
+	}
+
+    return total;
 }
 
 //Martin
