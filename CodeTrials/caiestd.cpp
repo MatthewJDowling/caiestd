@@ -1,5 +1,6 @@
+#include <iostream>
 #include "caiestd.h"
-
+#include <math.h>
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
     return Point2D();
@@ -19,9 +20,13 @@ int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
     return 0;
 }
-
+//mine
 float degToRad(float deg)
 {
+	scanf_s("%d", deg);
+	int rad;
+	rad = (deg * 3.1459 / 180);
+	printf("%d", rad);
     return 0.0f;
 }
 
