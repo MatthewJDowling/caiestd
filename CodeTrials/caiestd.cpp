@@ -111,4 +111,7 @@ void printHotdog(const Hotdog & targetDog)
 //Open
 void cookHotdog(Hotdog & targetDog)
 {
+	targetDog.isPrepared = true;
+	
+
 }
