@@ -1,5 +1,5 @@
 #include "caiestd.h"
-
+#include <iostream>
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
     return Point2D();
@@ -37,6 +37,28 @@ int pow(int base, int power)
 
 float distance(Point2D first, Point2D second)
 {
+	int x1 = 0, x2 = 0, y1 = 0, y2 = 0;
+	double distance;
+
+	printf("Enter your first x and y coordinates, then enter your second x and 7 coordinates");
+	scanf_s("%d %d %d", &x1, &y1, &x2, &y2);
+	getchar();
+	
+	int distancex = (x2 - x1) ^ 2;
+	int distancey = (y2 - y1) ^ 2;
+
+	double findDistance = (distancex - distancey);
+	
+	
+	
+	printf("The distance between the two points is: %d", findDistance);
+
+	
+
+
+
+
+
     return 0.0f;
 }
 
