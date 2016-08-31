@@ -72,7 +72,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 {
     return Hotdog();
 }
-//Open
+//Ginger
 void printHotdog(const Hotdog & targetDog)
 {
 }
