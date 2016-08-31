@@ -30,7 +30,8 @@ int divideAndConquer(int nums[], size_t numSize)
 //Trevor 
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
-    return 0;
+
+    return (aMax - bMin);
 }
 //Ginger
 float degToRad(float deg)
