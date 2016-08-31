@@ -31,7 +31,8 @@ int divideAndConquer(int nums[], size_t numSize)
 //Open
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
-    return 0;
+
+    return (aMax - bMin);
 }
 //Ginger
 float degToRad(float deg)
