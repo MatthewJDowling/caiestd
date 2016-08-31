@@ -20,36 +20,50 @@ struct Hotdog
 };
 
 // Returns the sum of two points.
+
+//Josh
 Point2D  pointAdd(const Point2D &lhs, const Point2D &rhs);
 
 // Returns the difference between two points.
+
+//Pearson
 Point2D  pointSub(const Point2D &lhs, const Point2D &rhs);
 
 // For every 2 values, print the larger of the two.
 // Repeat this process until only one integer remains.
 //
 // Returns the last remaining integer.
+
+//Chelsey
 int divideAndConquer(int nums[], size_t numSize);
 
 // Returns the overlap amount between two 1-dimensional objects.
 // More Information: http://goo.gl/YS0hc1
+//Open
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax);
 
 // Returns the value converted into radians.
+//Ginger
 float degToRad(float deg);
 
+//Xavier
 // Returns the value converted into degrees.
 float radToDeg(float rad);
 
+//Trevor
 // Returns the base raised to the given power.
 int power(int base, int power);
 
+//Kobe
 // Returns the distance between two 2D points.
 float distance(Point2D first, Point2D second);
 
+
+//Keil
 // Returns the sum of all elements in the integer array.
 int sum(int nums[], size_t numSize);
 
+//Martin
 // Populates the array with Fibonacci values.
 void fiboMyArray(int dest[], size_t destSize);
 
