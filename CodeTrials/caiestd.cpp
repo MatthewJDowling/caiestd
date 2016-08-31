@@ -45,7 +45,11 @@ float degToRad(float deg)
 //Xavier
 float radToDeg(float rad)
 {
-    return 0.0f;
+	float degs = 0, rads = 0, pis = 0;
+	pis = 3.14;
+	degs = 120;
+	rads = (degs * pis) / 180;
+	return rads;
 }
 
 
