@@ -13,7 +13,7 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 	point.y = lhs.y + rhs.y;
     return point;
 }
-//Pearson
+//Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
 	Point2D Subtraction;
@@ -25,12 +25,24 @@ Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 //Chelsey
 int divideAndConquer(int nums[], size_t numSize)
 {
-    return 0;
+	int pairCount = numSize / 2;
+	int index;
+	for ( int pair = 0; pair < pairCount; ++pair )
+	{
+		index = pair * 2;
+		if (nums[index] > nums[index + 1])
+			printf("%d", nums[index]);
+		else
+			printf("%d", nums[index + 1]);
 }
-//Open
+
+    return (index + 1);
+}
+//Trevor 
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
-    return 0;
+
+    return (aMax - bMin);
 }
 //Ginger
 float degToRad(float deg)
@@ -57,16 +69,32 @@ int power(int base, int power)
 	ret = pow(base, power);
     return ret;
 }
-//Kobey
+//Pearson
 float distance(Point2D first, Point2D second)
 {
-    return 0.0f;
+	
+
+	
+	// TODO: how to square root?!!!
+	float distancex = (second.x - first.x) * (second.x - first.x);
+	float distancey = (second.y - first.y) * (second.y - first.y);
+
+	double findDistance = sqrt(distancex + distancey);
+	
+    return findDistance;
 }
 
 //Keil
 int sum(int nums[], size_t numSize)
 {
-    return 0;
+	
+	int total = 0;
+	for (int i = 0; i < numSize; i++)
+	{
+		total = total + nums[i];
+	}
+
+    return total;
 }
 
 //Martin
@@ -94,6 +122,7 @@ void fiboMyArray(int dest[], size_t destSize)
 //Open
 void concatIntArray(int srcA[], size_t srcSizeA, int srcB[], size_t srcSizeB, int dest[], size_t destSizeB)
 {
+	
 }
 //Open
 Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int creamCheeseaApps)

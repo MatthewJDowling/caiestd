@@ -27,7 +27,7 @@ int main()
         ASSERT_FLOAT_EQ(-2.0f, pointSubResult.y, "POINT SUB (y)", "y value did not match");
 
         float pointDistResult = distance(pointA, pointB);
-        ASSERT_FLOAT_EQ(2.82843, pointDistResult, "DISTANCE", "Mismatch.");
+        ASSERT_FLOAT_EQ(2.82842708, pointDistResult, "DISTANCE", "Mismatch."); //@terry: comparison too strict
 
         // Misc.
         int divideArgs[] = { 34,543, 23, 12, 54, 34, -40, 3 };
