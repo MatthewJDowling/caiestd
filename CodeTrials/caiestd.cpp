@@ -100,6 +100,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 {
     return Hotdog();
 }
+//Ginger
 
 void printHotdog(const Hotdog & targetDog)
 {
