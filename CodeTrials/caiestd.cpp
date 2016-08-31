@@ -1,4 +1,6 @@
 #include "caiestd.h"
+#include <math.h>
+#include <cmath>
 
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
@@ -30,8 +32,10 @@ float radToDeg(float rad)
     return 0.0f;
 }
 
-int pow(int base, int power)
+int power(int base, int power)
 {
+	int ret;
+	ret = pow(base, power);
     return 0;
 }
 

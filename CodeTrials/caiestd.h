@@ -42,7 +42,7 @@ float degToRad(float deg);
 float radToDeg(float rad);
 
 // Returns the base raised to the given power.
-int pow(int base, int power);
+int power(int base, int power);
 
 // Returns the distance between two 2D points.
 float distance(Point2D first, Point2D second);
