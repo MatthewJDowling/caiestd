@@ -22,7 +22,7 @@ Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 	
 	return point;
 }
-//Chelsey
+//Chelsey &Trevor
 int divideAndConquer(int nums[], size_t numSize)
 {
 	int pairCount = numSize / 2;
@@ -124,7 +124,7 @@ void concatIntArray(int srcA[], size_t srcSizeA, int srcB[], size_t srcSizeB, in
 {
 	
 }
-//Open
+//Ginger & Josh
 Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int creamCheeseaApps)
 {
     return Hotdog();
