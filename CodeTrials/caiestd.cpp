@@ -25,12 +25,11 @@ int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 //Ginger
 float degToRad(float deg)
 {
-	printf("Enter degrees to convert ");
-	scanf_s("%d", deg);
+	
 	int rad;
 	rad = (deg * 3.1459 / 180);
-	printf("radians: %d", rad);
-    return 0.0f;
+	
+    return rad;
 }
 //Xavier
 float radToDeg(float rad)
@@ -61,6 +60,23 @@ int sum(int nums[], size_t numSize)
 //Keil
 void fiboMyArray(int dest[], size_t destSize)
 {
+	dest[destSize];
+	for (int i =0; i < destSize; ++i)
+	{
+		if (i == 0)
+		{
+			dest[i] = 0;
+		}
+		else if (i == 1)
+		{
+			dest[i] = 1;
+		}
+		else
+		{
+			dest[i] = dest[i - 1] + dest[i - 2];
+		}
+	}
+	
 }
 
 //Open
@@ -73,8 +89,10 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
     return Hotdog();
 }
 //Ginger
+
 void printHotdog(const Hotdog & targetDog)
 {
+
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
