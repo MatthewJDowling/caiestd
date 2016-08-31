@@ -7,16 +7,11 @@
 
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
-	int x;
-	int y;
-	int sum;
+	Point2D point;
 
-	scanf_s("%d%d", &x, &y);
+	point.x = lhs.x + rhs.x;
 
-	sum = x + y;
-
-	printf("%d\n", sum);
-	getchar();
+	point.y = lhs.x + rhs.y;
     return Point2D();
 }
 //Pearson
