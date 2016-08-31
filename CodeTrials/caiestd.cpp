@@ -36,7 +36,7 @@ int power(int base, int power)
 {
 	int ret;
 	ret = pow(base, power);
-    return 0;
+    return ret;
 }
 
 float distance(Point2D first, Point2D second)
