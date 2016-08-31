@@ -3,6 +3,10 @@
 #include <math.h>
 #include <cmath>
 #include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
 
 //keil
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
@@ -125,6 +129,19 @@ void fiboMyArray(int dest[], size_t destSize)
 void concatIntArray(int srcA[], size_t srcSizeA, int srcB[], size_t srcSizeB, int dest[], size_t destSizeB)
 {
 	
+	
+	srcA[srcSizeA];
+	srcB[srcSizeB];
+	destSizeB = srcSizeA + srcSizeB;
+	for (int i = 0; i < srcSizeA; ++i)
+	{
+		dest[i] = srcA[i];
+	}
+	for (int i = srcSizeA; i < srcSizeA + srcSizeB; ++i)
+	{
+		dest[i] = srcB[i - srcSizeA];
+	}
+	dest[destSizeB];
 }
 //Open
 Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int creamCheeseaApps)
