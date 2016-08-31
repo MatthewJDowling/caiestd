@@ -25,7 +25,7 @@ Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 //Chelsey
 int divideAndConquer(int nums[], size_t numSize)
 {
-	int pairCount = numSize / 2;
+	/*int pairCount = numSize / 2;
 	int index;
 	for ( int pair = 0; pair < pairCount; ++pair )
 	{
@@ -34,9 +34,18 @@ int divideAndConquer(int nums[], size_t numSize)
 			printf("%d", nums[index]);
 		else
 			printf("%d", nums[index + 1]);
+	}*/
+
+	while (numSize > 1)
+	{
+		for (int i = 0; i < numSize; i += 2)
+		{
+			nums[i / 2] = ((nums[i] > nums[i + 1]) ? nums[i] : nums[i + 1]);
+		}
+		numSize /= 2;
 	}
 
-    return (index + 1);
+    return nums[0];
 }
 //Trevor 
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
