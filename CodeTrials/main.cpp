@@ -22,7 +22,7 @@ int main()
         ASSERT_FLOAT_EQ(2.0f, pointAddResult.x, "POINT ADD (x)", "x value did not match");
         ASSERT_FLOAT_EQ(4.0f, pointAddResult.y, "POINT ADD (y)", "y value did not match");
 
-        Point2D pointSubResult = pointAdd(pointA, pointB);
+        Point2D pointSubResult = pointSub(pointA, pointB);	//@terryn, wrong func
         ASSERT_FLOAT_EQ(-2.0f, pointSubResult.x, "POINT SUB (x)", "x value did not match");
         ASSERT_FLOAT_EQ(-2.0f, pointSubResult.y, "POINT SUB (y)", "y value did not match");
 

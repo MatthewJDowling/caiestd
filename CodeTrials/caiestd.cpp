@@ -16,11 +16,11 @@ Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 //Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
-	Point2D Subtraction;
-	Subtraction.x = lhs.x - rhs.x;
-	Subtraction.y = lhs.y - rhs.y;
+	Point2D point;
+	point.x = lhs.x - rhs.x;
+	point.y = lhs.y - rhs.y;
 	
-	return Subtraction;
+	return point;
 }
 //Chelsey
 int divideAndConquer(int nums[], size_t numSize)
@@ -137,7 +137,7 @@ void printHotdog(const Hotdog & targetDog)
 {
 	printf(" %d",targetDog);
 }
-//Open
+//Josh
 void cookHotdog(Hotdog & targetDog)
 {
 }
