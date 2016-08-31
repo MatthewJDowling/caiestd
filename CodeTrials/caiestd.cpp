@@ -53,7 +53,7 @@ float degToRad(float deg)
 	
     return rad;
 }
-//Xavier
+//Ginger :D
 float radToDeg(float rad)
 {
 	float deg;
