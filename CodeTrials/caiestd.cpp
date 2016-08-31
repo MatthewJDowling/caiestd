@@ -4,17 +4,16 @@
 #include <cmath>
 #include <iostream>
 
-
+//keil
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
 	Point2D point;
 
 	point.x = lhs.x + rhs.x;
-
-	point.y = lhs.x + rhs.y;
-    return Point2D();
+	point.y = lhs.y + rhs.y;
+    return point;
 }
-//Pearson
+//Kobey
 Point2D pointSub(const Point2D & lhs, const Point2D & rhs)
 {
 	Point2D Subtraction;
@@ -28,7 +27,7 @@ int divideAndConquer(int nums[], size_t numSize)
 {
     return 0;
 }
-//Open
+//Kobey & Josh
 int displacementOverlap(int aMin, int aMax, int bMin, int bMax)
 {
 
@@ -61,7 +60,7 @@ int power(int base, int power)
 	ret = pow(base, power);
     return ret;
 }
-//Kobey
+//Pearson
 float distance(Point2D first, Point2D second)
 {
     return 0.0f;
@@ -108,7 +107,7 @@ Hotdog & applyHotdog(Hotdog & targetDog, int relishApps, int mustardApps, int cr
 
 void printHotdog(const Hotdog & targetDog)
 {
-
+	printf(" %d",targetDog);
 }
 //Open
 void cookHotdog(Hotdog & targetDog)
