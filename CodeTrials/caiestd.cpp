@@ -2,9 +2,21 @@
 #include "caiestd.h"
 #include <math.h>
 #include <cmath>
-//Josh
+#include <iostream>
+
+
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
+	int x;
+	int y;
+	int sum;
+
+	scanf_s("%d%d", &x, &y);
+
+	sum = x + y;
+
+	printf("%d\n", sum);
+	getchar();
     return Point2D();
 }
 //Pearson
