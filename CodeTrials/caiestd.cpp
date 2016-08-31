@@ -1,6 +1,8 @@
 #include <iostream>
 #include "caiestd.h"
 #include <math.h>
+#include <cmath>
+
 Point2D pointAdd(const Point2D & lhs, const Point2D & rhs)
 {
     return Point2D();
@@ -35,9 +37,11 @@ float radToDeg(float rad)
     return 0.0f;
 }
 
-int pow(int base, int power)
+int power(int base, int power)
 {
-    return 0;
+	int ret;
+	ret = pow(base, power);
+    return ret;
 }
 
 float distance(Point2D first, Point2D second)
