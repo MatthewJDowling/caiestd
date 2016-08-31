@@ -10,5 +10,6 @@
 
 int main()
 {
+	
     system("pause");
 }
